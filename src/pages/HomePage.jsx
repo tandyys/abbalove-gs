@@ -1,4 +1,4 @@
-function HomePage() {
+const HomePage = () => {
   return (
     <>
       <div className="">
@@ -160,6 +160,6 @@ function HomePage() {
       </div>
     </>
   );
-}
+};
 
 export default HomePage;
