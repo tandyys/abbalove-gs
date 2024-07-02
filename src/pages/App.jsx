@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center bg-red-700 items-center h-screen">
-        <div className="max-w-sm rounded bg-white overflow-hidden shadow-lg">
+      <div className="flex justify-center bg-red-600 items-center h-screen">
+        <div className="max-w-sm rounded-xl bg-white overflow-hidden shadow-lg">
           <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
               <img
@@ -26,7 +26,7 @@ function App() {
               <form className="space-y-6" action="#" method="POST">
                 <div>
                   <label
-                    for="email"
+                    htmlFor="email"
                     className="block text-sm font-medium leading-6 text-gray-900"
                   >
                     Email address
@@ -36,9 +36,9 @@ function App() {
                       id="email"
                       name="email"
                       type="email"
-                      autocomplete="email"
+                      autoComplete="email"
                       required
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6 "
                     />
                   </div>
                 </div>
@@ -46,7 +46,7 @@ function App() {
                 <div>
                   <div className="flex items-center justify-between">
                     <label
-                      for="password"
+                      htmlFor="password"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
                       Password
@@ -67,7 +67,7 @@ function App() {
                       type="password"
                       autoComplete="current-password"
                       required
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
