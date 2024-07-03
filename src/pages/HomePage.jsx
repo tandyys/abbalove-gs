@@ -67,16 +67,16 @@ function HomePage() {
 
             <div className="sm:col-span-3">
               <label
-                htmlFor="Availability"
+                htmlFor="Services"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Services type
               </label>
               <div className="mt-2">
                 <select
-                  id="Availability"
-                  name="Availability"
-                  autoComplete="Availability"
+                  id="Services"
+                  name="Services"
+                  autoComplete="Services"
                   required
                   className="block w-32 rounded-md border-0 py-1.5 pl-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:max-w-xs sm:text-sm sm:leading-6"
                 >
@@ -95,7 +95,64 @@ function HomePage() {
               </div>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="sm:col-span-3">
+            <label
+              htmlFor="Availabilty"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
+              Select dates :
+            </label>
+            <div className="flex flex-col space-y-2">
+              <label className="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  className="form-checkbox text-blue-600"
+                  name="option"
+                  value="option1"
+                  // checked={selectedOption === 'option1'}
+                  // onChange={handleOptionChange}
+                />
+                <span className="ml-2">Date 1</span>
+              </label>
+
+              <label className="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  className="form-checkbox text-blue-600"
+                  name="option"
+                  value="option1"
+                  // checked={selectedOption === 'option1'}
+                  // onChange={handleOptionChange}
+                />
+                <span className="ml-2">Date 2</span>
+              </label>
+
+              <label className="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  className="form-checkbox text-blue-600"
+                  name="option"
+                  value="option1"
+                  // checked={selectedOption === 'option1'}
+                  // onChange={handleOptionChange}
+                />
+                <span className="ml-2">Date 3</span>
+              </label>
+
+              <label className="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  className="form-checkbox text-blue-600"
+                  name="option"
+                  value="option1"
+                  // checked={selectedOption === 'option1'}
+                  // onChange={handleOptionChange}
+                />
+                <span className="ml-2">Date 4</span>
+              </label>
+            </div>
+          </div>
+          {/* <div className="flex items-center">
             <input
               type="checkbox"
               id="checkbox"
@@ -105,8 +162,7 @@ function HomePage() {
             <label htmlFor="checkbox" className="ml-2 text-sm text-gray-700">
               I can take responsibility for my choices
             </label>
-          </div>
-
+          </div> */}
           <div>
             <button
               type="submit"
