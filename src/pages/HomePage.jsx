@@ -112,7 +112,7 @@ function HomePage() {
                   // checked={selectedOption === 'option1'}
                   // onChange={handleOptionChange}
                 />
-                <span className="ml-2">Date 1</span>
+                <span className="ml-2">7 July 2024</span>
               </label>
 
               <label className="inline-flex items-center">
@@ -124,7 +124,7 @@ function HomePage() {
                   // checked={selectedOption === 'option1'}
                   // onChange={handleOptionChange}
                 />
-                <span className="ml-2">Date 2</span>
+                <span className="ml-2">14 July 2024</span>
               </label>
 
               <label className="inline-flex items-center">
@@ -136,7 +136,7 @@ function HomePage() {
                   // checked={selectedOption === 'option1'}
                   // onChange={handleOptionChange}
                 />
-                <span className="ml-2">Date 3</span>
+                <span className="ml-2">21 July 2024</span>
               </label>
 
               <label className="inline-flex items-center">
@@ -148,7 +148,7 @@ function HomePage() {
                   // checked={selectedOption === 'option1'}
                   // onChange={handleOptionChange}
                 />
-                <span className="ml-2">Date 4</span>
+                <span className="ml-2">28 July 2024</span>
               </label>
             </div>
           </div>
