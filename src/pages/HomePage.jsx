@@ -97,10 +97,45 @@ function HomePage() {
           </div>
           <div className="sm:col-span-3">
             <label
+              htmlFor="Activity"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
+              Select activity
+            </label>
+            <div className="flex flex-col space-y-2">
+              <label className="inline-flec items-center">
+                <input
+                  type="radio"
+                  className="form-radio text-blue-600"
+                  name="activity"
+                  //   id=""
+                  value="activity1"
+                  //   checked={}
+                  // onChange={}
+                />
+                <span className="ml-2">Ibadah Raya</span>
+              </label>
+
+              <label className="flex space-y-2">
+                <input
+                  type="radio"
+                  className="form-radio text-blue-600"
+                  name="activity"
+                  value="activity2"
+                  //   id=""
+                  // checked={}
+                  // onChange={}
+                />
+                <span className="ml-2">SPK</span>
+              </label>
+            </div>
+          </div>
+          <div className="sm:col-span-3">
+            <label
               htmlFor="Availabilty"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
-              Select dates :
+              Select availability dates :
             </label>
             <div className="flex flex-col space-y-2">
               <label className="inline-flex items-center">
@@ -120,7 +155,7 @@ function HomePage() {
                   type="checkbox"
                   className="form-checkbox text-blue-600"
                   name="option"
-                  value="option1"
+                  value="option2"
                   // checked={selectedOption === 'option1'}
                   // onChange={handleOptionChange}
                 />
@@ -132,7 +167,7 @@ function HomePage() {
                   type="checkbox"
                   className="form-checkbox text-blue-600"
                   name="option"
-                  value="option1"
+                  value="option3"
                   // checked={selectedOption === 'option1'}
                   // onChange={handleOptionChange}
                 />
@@ -144,7 +179,7 @@ function HomePage() {
                   type="checkbox"
                   className="form-checkbox text-blue-600"
                   name="option"
-                  value="option1"
+                  value="option4"
                   // checked={selectedOption === 'option1'}
                   // onChange={handleOptionChange}
                 />
