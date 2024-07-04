@@ -85,7 +85,7 @@ function HomePage() {
                       name="Services"
                       autoComplete="Services"
                       required
-                      className="block w-32 rounded-md border-0 py-1.5 pl-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                      className="block w-32 rounded-md border-0 py-1.5 px-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:max-w-xs sm:text-sm sm:leading-6"
                     >
                       <option value="" disabled selected hidden>
                         Select one
@@ -114,7 +114,7 @@ function HomePage() {
                     <label className="inline-flex items-center">
                       <input
                         type="radio"
-                        className="form-radio text-blue-600"
+                        className="form-radio text-red-600"
                         name="activity"
                         //   id=""
                         value="activity1"
@@ -127,7 +127,7 @@ function HomePage() {
                     <label className="flex">
                       <input
                         type="radio"
-                        className="form-radio text-blue-600"
+                        className="form-radio text-red-600"
                         name="activity"
                         value="activity2"
                         //   id=""
@@ -140,7 +140,7 @@ function HomePage() {
                     <label className="flex">
                       <input
                         type="radio"
-                        className="form-radio text-blue-600"
+                        className="form-radio text-red-600"
                         name="activity"
                         value="activity3"
                         //   id=""
@@ -154,7 +154,7 @@ function HomePage() {
                     <label className="flex">
                       <input
                         type="radio"
-                        className="form-radio text-blue-600"
+                        className="form-radio text-red-600"
                         name="activity"
                         value="activity4"
                         //   id=""
@@ -167,7 +167,7 @@ function HomePage() {
                     <label className="flex">
                       <input
                         type="radio"
-                        className="form-radio text-blue-600"
+                        className="form-radio text-red-600"
                         name="activity"
                         value="activity5"
                         //   id=""
@@ -190,7 +190,7 @@ function HomePage() {
                   <label className="inline-flex items-center">
                     <input
                       type="checkbox"
-                      className="form-checkbox text-blue-600"
+                      className="form-checkbox text-red-600"
                       name="option"
                       value="option1"
                       // checked={selectedOption === 'option1'}
@@ -202,7 +202,7 @@ function HomePage() {
                   <label className="inline-flex items-center">
                     <input
                       type="checkbox"
-                      className="form-checkbox text-blue-600"
+                      className="form-checkbox text-red-600"
                       name="option"
                       value="option2"
                       // checked={selectedOption === 'option1'}
@@ -214,7 +214,7 @@ function HomePage() {
                   <label className="inline-flex items-center">
                     <input
                       type="checkbox"
-                      className="form-checkbox text-blue-600"
+                      className="form-checkbox text-red-600"
                       name="option"
                       value="option3"
                       // checked={selectedOption === 'option1'}
@@ -226,7 +226,7 @@ function HomePage() {
                   <label className="inline-flex items-center">
                     <input
                       type="checkbox"
-                      className="form-checkbox text-blue-600"
+                      className="form-checkbox text-red-600"
                       name="option"
                       value="option4"
                       // checked={selectedOption === 'option1'}
