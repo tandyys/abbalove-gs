@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 function HomePage() {
+  // State to track selected radio button
+  const [selectedRadio, setSelectedRadio] = useState("");
+
+  // Handling radio button change
+  const handleRadioChange = (event) => {
+    setSelectedRadio(event.target.value);
+  };
+
   return (
     <>
       <div className="flex justify-center items-center h-screen">
@@ -118,8 +128,8 @@ function HomePage() {
                         name="activity"
                         //   id=""
                         value="activity1"
-                        //   checked={}
-                        // onChange={}
+                        checked={selectedRadio === "activity1"}
+                        onChange={handleRadioChange}
                       />
                       <span className="ml-2">Ibadah Raya</span>
                     </label>
@@ -131,8 +141,8 @@ function HomePage() {
                         name="activity"
                         value="activity2"
                         //   id=""
-                        // checked={}
-                        // onChange={}
+                        checked={selectedRadio === "activity2"}
+                        onChange={handleRadioChange}
                       />
                       <span className="ml-2">SPK</span>
                     </label>
@@ -144,8 +154,8 @@ function HomePage() {
                         name="activity"
                         value="activity3"
                         //   id=""
-                        // checked={}
-                        // onChange={}
+                        checked={selectedRadio === "activity3"}
+                        onChange={handleRadioChange}
                       />
                       <span className="ml-2">Pemakaman</span>
                     </label>
@@ -158,8 +168,8 @@ function HomePage() {
                         name="activity"
                         value="activity4"
                         //   id=""
-                        // checked={}
-                        // onChange={}
+                        checked={selectedRadio === "activity4"}
+                        onChange={handleRadioChange}
                       />
                       <span className="ml-2">Pernikahan</span>
                     </label>
@@ -171,8 +181,8 @@ function HomePage() {
                         name="activity"
                         value="activity5"
                         //   id=""
-                        // checked={}
-                        // onChange={}
+                        checked={selectedRadio === "activity5"}
+                        onChange={handleRadioChange}
                       />
                       <span className="ml-2">DC</span>
                     </label>
@@ -187,66 +197,98 @@ function HomePage() {
                   Select availability dates :
                 </label>
                 <div className="flex flex-col space-y-2">
-                  <label className="inline-flex items-center">
-                    <input
-                      type="checkbox"
-                      className="form-checkbox text-red-600"
-                      name="option"
-                      value="option1"
-                      // checked={selectedOption === 'option1'}
-                      // onChange={handleOptionChange}
-                    />
-                    <span className="ml-2">7 July 2024</span>
-                  </label>
+                  {selectedRadio === "activity1" && (
+                    <>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox text-red-600"
+                          name="option"
+                          value="option1"
+                        />
+                        <span className="ml-2">7 July 2024</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox text-red-600"
+                          name="option"
+                          value="option2"
+                        />
+                        <span className="ml-2">14 July 2024</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox text-red-600"
+                          name="option"
+                          value="option3"
+                        />
+                        <span className="ml-2">21 July 2024</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox text-red-600"
+                          name="option"
+                          value="option4"
+                        />
+                        <span className="ml-2">28 July 2024</span>
+                      </label>
+                    </>
+                  )}
 
-                  <label className="inline-flex items-center">
-                    <input
-                      type="checkbox"
-                      className="form-checkbox text-red-600"
-                      name="option"
-                      value="option2"
-                      // checked={selectedOption === 'option1'}
-                      // onChange={handleOptionChange}
-                    />
-                    <span className="ml-2">14 July 2024</span>
-                  </label>
+                  {selectedRadio === "activity2" && (
+                    <>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox text-red-600"
+                          name="option"
+                          value="option1"
+                        />
+                        <span className="ml-2">12 July 2024</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox text-red-600"
+                          name="option"
+                          value="option2"
+                        />
+                        <span className="ml-2">15 July 2024</span>
+                      </label>
+                      <label className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          className="form-checkbox text-red-600"
+                          name="option"
+                          value="option3"
+                        />
+                        <span className="ml-2">27 July 2024</span>
+                      </label>
+                    </>
+                  )}
 
-                  <label className="inline-flex items-center">
-                    <input
-                      type="checkbox"
-                      className="form-checkbox text-red-600"
-                      name="option"
-                      value="option3"
-                      // checked={selectedOption === 'option1'}
-                      // onChange={handleOptionChange}
-                    />
-                    <span className="ml-2">21 July 2024</span>
-                  </label>
+                  {selectedRadio === "activity3" && (
+                    <>
+                      <p>There is no schedule</p>
+                    </>
+                  )}
 
-                  <label className="inline-flex items-center">
-                    <input
-                      type="checkbox"
-                      className="form-checkbox text-red-600"
-                      name="option"
-                      value="option4"
-                      // checked={selectedOption === 'option1'}
-                      // onChange={handleOptionChange}
-                    />
-                    <span className="ml-2">28 July 2024</span>
-                  </label>
+                  {selectedRadio === "activity4" && (
+                    <>
+                      <p>There is no schedule</p>
+                    </>
+                  )}
+
+                  {selectedRadio === "activity5" && (
+                    <>
+                      <p>There is no schedule</p>
+                    </>
+                  )}
                 </div>
               </div>
-              {/* <div className="flex items-center">
-            <input
-              type="checkbox"
-              id="checkbox"
-              name="checkbox"
-              className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
-            />
-            <label htmlFor="checkbox" className="ml-2 text-sm text-gray-700">
-              I can take responsibility for my choices
-            </label>
-          </div> */}
               <div>
                 <button
                   type="submit"
