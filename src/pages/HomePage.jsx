@@ -11,20 +11,20 @@ function HomePage() {
 
   return (
     <>
-      <div className="flex justify-center items-center h-screen">
-        <div className="flex w-4/12 rounded-2xl bg-white overflow-hidden shadow-lg border-y-8 border-red-600 justify-center">
-          <div className="my-10 w-80">
+      <div className="flex justify-center items-center min-h-screen px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+          <div className="bg-white rounded-2xl shadow-lg border-y-8 border-red-600 p-6 md:p-8 lg:p-10 xl:p-12">
             <img
-              className="mx-auto h-10 w-auto"
+              className="mx-auto h-10 w-auto mb-4"
               src="src/assets/logo.png"
               alt="Your Company"
             />
-            <form className="space-y-6 pt-4" action="#" method="POST">
+            <form className="space-y-6" action="#" method="POST">
               <h2 className="text-base font-semibold leading-7 text-gray-900 text-center">
                 Please fill the form
               </h2>
 
-              <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div className="mt-8 grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                   <label
                     htmlFor="first-name"
@@ -65,7 +65,7 @@ function HomePage() {
 
                 <div className="sm:col-span-4">
                   <label
-                    htmlFor="email"
+                    htmlFor="phoneNumber"
                     className="block text-sm font-medium leading-6 text-gray-900"
                   >
                     Phone number
@@ -74,10 +74,10 @@ function HomePage() {
                     <input
                       id="phoneNumber"
                       name="phoneNumber"
-                      type="phoneNumber"
-                      autoComplete="phoneNumber"
+                      type="tel"
+                      autoComplete="tel"
                       required
-                      className="block w-64 rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -95,7 +95,7 @@ function HomePage() {
                       name="Services"
                       autoComplete="Services"
                       required
-                      className="block w-32 rounded-md border-0 py-1.5 px-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                      className="block w-full md:w-32 rounded-md border-0 py-1.5 px-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:max-w-xs sm:text-sm sm:leading-6"
                     >
                       <option value="" disabled selected hidden>
                         Select one
@@ -112,6 +112,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
+
               <div className="sm:col-span-3">
                 <label
                   htmlFor="Activity"
@@ -119,68 +120,60 @@ function HomePage() {
                 >
                   Select activity
                 </label>
-                <div className="flex justify-between">
-                  <div>
+                <div className="flex flex-wrap justify-between">
+                  <div className="flex flex-col space-y-2">
                     <label className="inline-flex items-center">
                       <input
                         type="radio"
                         className="form-radio text-red-600"
                         name="activity"
-                        //   id=""
                         value="activity1"
                         checked={selectedRadio === "activity1"}
                         onChange={handleRadioChange}
                       />
                       <span className="ml-2">Ibadah Raya</span>
                     </label>
-
-                    <label className="flex">
+                    <label className="inline-flex items-center">
                       <input
                         type="radio"
                         className="form-radio text-red-600"
                         name="activity"
                         value="activity2"
-                        //   id=""
                         checked={selectedRadio === "activity2"}
                         onChange={handleRadioChange}
                       />
                       <span className="ml-2">SPK</span>
                     </label>
-
-                    <label className="flex">
+                    <label className="inline-flex items-center">
                       <input
                         type="radio"
                         className="form-radio text-red-600"
                         name="activity"
                         value="activity3"
-                        //   id=""
                         checked={selectedRadio === "activity3"}
                         onChange={handleRadioChange}
                       />
                       <span className="ml-2">Pemakaman</span>
                     </label>
                   </div>
-                  <div className="items-start">
-                    <label className="flex">
+                  <div className="flex flex-col space-y-2">
+                    <label className="inline-flex items-center">
                       <input
                         type="radio"
                         className="form-radio text-red-600"
                         name="activity"
                         value="activity4"
-                        //   id=""
                         checked={selectedRadio === "activity4"}
                         onChange={handleRadioChange}
                       />
                       <span className="ml-2">Pernikahan</span>
                     </label>
-
-                    <label className="flex">
+                    <label className="inline-flex items-center">
                       <input
                         type="radio"
                         className="form-radio text-red-600"
                         name="activity"
                         value="activity5"
-                        //   id=""
                         checked={selectedRadio === "activity5"}
                         onChange={handleRadioChange}
                       />
@@ -189,6 +182,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
+
               <div className="sm:col-span-3">
                 <label
                   htmlFor="Availabilty"
