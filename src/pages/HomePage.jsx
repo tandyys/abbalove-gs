@@ -1,10 +1,8 @@
 import { useState } from "react";
 
 function HomePage() {
-  // State to track selected radio button
   const [selectedRadio, setSelectedRadio] = useState("");
 
-  // Handling radio button change
   const handleRadioChange = (event) => {
     setSelectedRadio(event.target.value);
   };
